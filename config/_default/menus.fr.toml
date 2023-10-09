@@ -3,7 +3,7 @@
 # main menu
 [[main]]
 name = "Accueil"
-url = "/"
+url = ""
 weight = 1
 
 [[main]]
