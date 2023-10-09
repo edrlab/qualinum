@@ -71,20 +71,20 @@ path = "github.com/gethugothemes/hugo-modules/shortcodes/button"
 [[imports]]
 path = "github.com/gethugothemes/hugo-modules/shortcodes/notice"
 
-[[imports]]
-path = "github.com/gethugothemes/hugo-modules/seo-tools/basic-seo"
+# [[imports]]
+# path = "github.com/gethugothemes/hugo-modules/seo-tools/basic-seo"
 
-[[imports]]
-path = "github.com/gethugothemes/hugo-modules/seo-tools/site-verifications"
+# [[imports]]
+# path = "github.com/gethugothemes/hugo-modules/seo-tools/site-verifications"
 
-[[imports]]
-path = "github.com/gethugothemes/hugo-modules/seo-tools/google-tag-manager"
+# [[imports]]
+# path = "github.com/gethugothemes/hugo-modules/seo-tools/google-tag-manager"
 
 # [[imports]]
 # path = "github.com/gethugothemes/hugo-modules/seo-tools/baidu-analytics"
 
-# [[imports]]
-# path = "github.com/gethugothemes/hugo-modules/seo-tools/matomo-analytics"
+[[imports]]
+path = "github.com/gethugothemes/hugo-modules/seo-tools/matomo-analytics"
 
 # [[imports]]
 # path = "github.com/gethugothemes/hugo-modules/seo-tools/plausible-analytics"
