@@ -128,3 +128,29 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+resources/_gen/images/service-1_hu1640b0eaac84eab88b63529bbd01cf30_11502_6866d1eccde667f31504d3eef8555ffd.png
+
+
+# drafts
+
+Thumbs.db
+.DS_Store
+.dist
+.tmp
+.lock
+.sass-cache
+npm-debug.log
+node_modules
+builds
+package-lock.json
+public
+resources
+.hugo_build.lock
+jsconfig.json
+hugo_stats.json
+go.sum
+yarn.lock
+gautier.md
+content/drafts/*
+themes/hugoplate/exampleSite/*
+data/social copy.json
