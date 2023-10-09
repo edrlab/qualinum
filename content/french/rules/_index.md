@@ -1,5 +1,5 @@
 ---
 title: "Les règles"
 meta_title: ""
-description: "this is meta description"
+description: "La liste de référence qualité du livre numérique"
 ---

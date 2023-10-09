@@ -7,7 +7,7 @@ banner:
   button:
     enable: true
     label: "Voir les règles"
-    link: "/fr/rules"
+    link: "rules"
 
 # Features
 # features:
