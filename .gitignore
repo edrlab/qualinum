@@ -150,7 +150,7 @@ jsconfig.json
 hugo_stats.json
 go.sum
 yarn.lock
-gautier.md
+drafts/*
 content/drafts/*
 themes/hugoplate/exampleSite/*
 data/social copy.json
