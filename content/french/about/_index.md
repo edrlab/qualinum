@@ -26,6 +26,8 @@ Les règles sont publiées sous licence Creative Commons BY-SA. Vous pouvez les 
 
 https://creativecommons.org/licenses/by-sa/4.0/
 
+Licence du contenu original des fiches de la checklist Opquast : Elie Sloïm, Laurent Denis et la société Opquast. <a href="https://checklists.opquast.com/fr/assurance-qualite-web/licence/">Consulter la licence d'origine.</a>
+
 ## Collaborer
 
 Plusieurs méthodes sont possibles pour commenter, discuter et proposer des modifications ou améliorations. 
