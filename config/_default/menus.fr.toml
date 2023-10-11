@@ -41,6 +41,11 @@ weight = 3
 name = "Categories"
 url = "categories/"
 
+[[main]]
+# parent = "Pages"
+name = "Étiquettes"
+url = "tags/"
+
 # [[main]]
 # parent = "Pages"
 # name = "404 Page"
