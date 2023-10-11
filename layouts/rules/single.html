@@ -40,6 +40,7 @@
           </ul>
           <div class="content mb-10">
             {{ .Content }}
+            <blockquote>{{ .Params.abstract }}</blockquote>
             <h3>Objectifs</h3>
             <ul>
               {{ $objectif:= .Params.objectif }}
@@ -71,13 +72,16 @@
                   </li>
                 {{ end }}
               </ul>
-              
             </div>
+            
 
             {{/*  <div class="lg:col-4 flex items-center">
               {{ partial "social-share" (dict "Context" . "Class" "share-icons" "Title" (i18n "share") "Whatsapp" false "Telegram" false) }}
             </div>  */}}
           </div>
+          <hr/>
+          <p><i>Contenu original des fiches de la checklist Opquast : Elie Sloïm, Laurent Denis et la société Opquast. <a href="https://checklists.opquast.com/fr/assurance-qualite-web/licence/">Consulter la licence d'origine.</i></a></p>
+
           <!-- comments -->
           {{ if site.DisqusShortname }}
             <div class="mt-20">
@@ -85,6 +89,7 @@
             </div>
           {{ end }}
         </article>
+        
       </div>
 
       <!-- Related posts -->
