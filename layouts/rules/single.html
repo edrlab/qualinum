@@ -17,7 +17,7 @@
               <a
                 href="{{ `authors/` | relLangURL }}{{ .Params.Author | urlize }}/">
                 <i class="fa-regular fa-circle-user mr-2"></i
-                >{{ .Params.auteur }}
+                >{{ .Params.auteur }} {{ .Params.opquast }} - ebook {{ .Params.indiceebook }}
               </a>
             </li>
             <li class="mr-4 inline-block">
@@ -52,9 +52,9 @@
               {{ end }}
             </ul>
             <h3>Mise en œuvre</h3>
-            {{ .Params.Meo }}
+            <li class="inline-block">{{ .Params.Meo }}</li>
             <h3>Contrôle </h3>
-            {{ .Params.Controle }}
+            <li class="inline-block">{{ .Params.Controle }}</li>
           </div>
           <div class="row items-start justify-between">
             <div class="lg:col-5 mb-10 flex items-center lg:mb-0">
