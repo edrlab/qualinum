@@ -14,10 +14,13 @@
           </h1>
           <ul class="mb-4">
             <li class="mr-4 inline-block">
+            {{ .Params.description }}
+          </li>
+            <li class="mr-4 inline-block">
               <a
                 href="{{ `authors/` | relLangURL }}{{ .Params.Author | urlize }}/">
                 <i class="fa-regular fa-circle-user mr-2"></i
-                >{{ .Params.auteur }} {{ .Params.opquast }} - ebook {{ .Params.indiceebook }}
+                >{{ .Params.author }} {{ .Params.opquast }}
               </a>
             </li>
             <li class="mr-4 inline-block">
@@ -41,6 +44,7 @@
           <div class="content mb-10">
             {{ .Content }}
             <blockquote>{{ .Params.abstract }}</blockquote>
+            
             <h3>Objectifs</h3>
             <ul>
               {{ $objectif:= .Params.objectif }}
@@ -72,8 +76,26 @@
                   </li>
                 {{ end }}
               </ul>
+              
             </div>
-            
+            </div>
+            <div class="lg:col-5 mb-10 flex items-center lg:mb-0">
+              <h5>Étapes concernées : </h5>
+              <ul>
+                {{ $steps:= .Params.steps }}
+                {{ range $i,$p:= $steps }}
+                  <li class="inline-block">
+                    <a
+                    class="bg-theme-light hover:bg-primary dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark m-1 block rounded px-3 py-1 hover:text-white"
+                    href="{{ `etapes/` | relLangURL }}{{ . | urlize | lower }}/"> 
+                      {{ . | humanize }}</a>
+  
+                  </li>
+                {{ end }}
+              </ul>
+              </ul>
+              
+            </div>
 
             {{/*  <div class="lg:col-4 flex items-center">
               {{ partial "social-share" (dict "Context" . "Class" "share-icons" "Title" (i18n "share") "Whatsapp" false "Telegram" false) }}
