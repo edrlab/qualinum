@@ -57,9 +57,20 @@
               {{ end }}
             </ul>
             <h3>Mise en œuvre</h3>
-            <li class="inline-block">{{ .Params.Meo }}</li>
+            <ul>
+              {{ $meo:= .Params.meo }}
+              {{ range $i,$p:= $meo }}
+                <li class="inline-block">
+
+                    {{ . |safeHTML }}
+
+                </li>
+              {{ end }}
+            </ul>
+
+            {{/*  <li class="inline-block">{{ .Params.Meo }}</li>
             <h3>Contrôle </h3>
-            <li class="inline-block">{{ .Params.Controle }}</li>
+            <li class="inline-block">{{ .Params.Controle }}</li>  */}}
           </div>
           <div class="row items-start justify-between">
             <div class="lg:col-5 mb-10 flex items-center lg:mb-0">
@@ -110,11 +121,13 @@
             </div>
           {{ end }}
         </article>
-        
+        {{/*  <nav>
+          <a href="">Régle précédente</a> <a href="">Régle suivante</a>
+        </nav>  */}}
       </div>
 
       <!-- Related posts -->
-      {{ $related := (where site.RegularPages "Section" "in" site.Params.mainSections) | intersect (where site.RegularPages ".Title" "!=" .Title) | union (site.RegularPages.Related . ) }}
+      {{/*  {{ $related := (where site.RegularPages "Section" "in" site.Params.mainSections) | intersect (where site.RegularPages ".Title" "!=" .Title) | union (site.RegularPages.Related . ) }}
       {{ $related = $related | shuffle | first 3 }}
       {{ with $related }}
         <div class="section pb-0">
@@ -128,11 +141,11 @@
           </div>
         </div>
       {{ end }}
-    </div>
-    <div class="content mb-10">
+    </div>  */}}
+    {{/*  <div class="content mb-10">
            
       {{ .Content }}
 
-    </div>
+    </div>  */}}
   </section>
 {{ end }}
