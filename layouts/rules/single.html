@@ -51,7 +51,7 @@
               {{ range $i,$p:= $objectif }}
                 <li class="inline-block">
 
-                    {{ . | humanize }}
+                    {{ . | safeHTML  }}
 
                 </li>
               {{ end }}
@@ -62,7 +62,7 @@
               {{ range $i,$p:= $meo }}
                 <li class="inline-block">
 
-                    {{ . |safeHTML }}
+                    {{ . | safeHTML }}
 
                 </li>
               {{ end }}
