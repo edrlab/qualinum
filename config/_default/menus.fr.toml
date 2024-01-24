@@ -12,6 +12,11 @@ url = "about/"
 weight = 2
 
 [[main]]
+name = "Auteurs"
+url = "authors/"
+weight = 2
+
+[[main]]
 name = "Règles"
 url = "rules/"
 weight = 3
