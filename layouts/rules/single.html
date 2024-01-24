@@ -16,13 +16,7 @@
             <li class="mr-4 inline-block">
             {{ .Params.description }}
           </li>
-            <li class="mr-4 inline-block">
-              <a
-                href="{{ `authors/` | relLangURL }}{{ .Params.Author | urlize }}/">
-                <i class="fa-regular fa-circle-user mr-2"></i
-                >{{ .Params.author }} {{ .Params.opquast }}
-              </a>
-            </li>
+
             <li class="mr-4 inline-block">
               <i class="fa-regular fa-folder mr-2"></i>
               {{ $categories:= .Params.categories }}
@@ -36,10 +30,7 @@
                 </a>
               {{ end }}
             </li>
-            <li class="mr-4 inline-block">
-              <i class="fa-regular fa-clock mr-2"></i>
-              {{ time.Format ":date_long" .PublishDate }}
-            </li>
+
           </ul>
           <div class="content mb-10">
             {{ .Content }}
@@ -104,9 +95,22 @@
                   </li>
                 {{ end }}
               </ul>
-              </ul>
-              
-            </div>
+              </div>
+              <p class="mr-4 inline-block">
+                <i class="fa-regular fa-clock mr-2"></i>
+                {{ time.Format ":date_long" .PublishDate }}
+              </p>
+              <p>Auteurs : 
+                  {{/*  <i class="fa-regular fa-circle-user mr-2"></i>  */}}
+                                  {{ $author:= .Params.author }} 
+                                  {{ range $i,$p:= $author }}
+                                      <a
+                                      class="bg-theme-light hover:bg-primary dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark m-1 rounded px-3 py-1 hover:text-white"
+                                      href="{{ `authors/` | relLangURL }}{{ . | urlize | lower }}/"> 
+                                        {{ . | humanize }}</a>
+                                  {{ end }}
+              </p>
+              <p>Reference Opquast {{ .Params.opquast }}</p>
 
             {{/*  <div class="lg:col-4 flex items-center">
               {{ partial "social-share" (dict "Context" . "Class" "share-icons" "Title" (i18n "share") "Whatsapp" false "Telegram" false) }}
