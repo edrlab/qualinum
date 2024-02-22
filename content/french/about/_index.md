@@ -8,17 +8,11 @@ layout: about
 
 *Travail en cours.*
 
-En entrant dans l'âge de la maturité, l'édition numérique a dû développer des processus d'industrialisation d'un type nouveau pour une industrie essentiellement "papier". La standardisation d'un format de distribution de livres numériques a été obtenue par le développement du format EPUB. Puis est venue l'industrialisation de logiciels de lecture numérique, avec l'apparition d'initiatives telles que le projet Readium. La diffusion en cours de la technologie de gestion de droits numériques LCP participe également à ce mouvement de standardisation.
+Entrée dans l’age de la maturité, l’édition numérique a développé des processus d’industrialisation et de standardisation adaptés, comme le format EPUB. 
 
-La numérisation de l'édition est aujourd'hui également soumise à des injonctions extérieures liées à des dispositions légales et des enjeux sociétaux, parfois  peu maîtrisées par les acteurs du secteur.
+La numérisation de l'édition n”échappe pas aujourd’hui aux injonctions extérieures liées à des dispositions légales et des enjeux sociétaux. Pour demeurer rentables tout en répondant aux attentes des publics et des financeurs, les maisons d'édition doivent acquérir des compétences variées, les équipes de production numérique ne peuvent se limiter à la typographie, la performance, l’interopérabilité, l'accessibilité, l'éco-conception, la sécurité ou la gestion des données personnelles. Il est impératif de coordonner ces diverses expertises.
 
-Pour demeurer rentables tout en répondant aux attentes des publics et des financeurs, les maisons d'édition doivent donc acquérir des compétences variées. Les équipes de production numérique ne peuvent se limiter à la typographie, la performance, l’interopérabilité, l'accessibilité, l'éco-conception, la sécurité ou la gestion des données personnelles. Il est impératif de coordonner ces diverses expertises.
-
-La complexité croissante du cadre normatif de l'édition numérique a pour effet secondaire d'éloigner davantage le métier des préoccupations des éditrices et éditeurs, créant ainsi des fossés et des incompréhensions entre les équipes de conception, production, diffusion et management.
-
-Cela engendre des difficultés pour les métiers de l'édition en termes de prise de décision, maîtrise des risques, formation, méthodes, moyens et gouvernance. Dans les secteurs industrialisés, l'assurance qualité, le management de la qualité, le contrôle qualité, les certifications, les qualiticiens, les méthodes, les techniques et les formations sont monnaie courante. Le secteur de l'édition numérique est aujourd'hui prêt à s'armer de ces outils pour intégrer et assimiler diverses expertises extérieures.
-
-## Objectifs
+Tous les métiers de l'édition numérique sont concernés et les enjeux se posent en termes de prise de décision, maîtrise des risques, formation, méthodes, moyens et gouvernance.  Pour intégrer et assimiler diverses expertises extérieures, l’édition numérique doit s’équiper d’outils d'assurance, de management et de contrôle qualité tant pour la conception la production et la distribution que pour la formation et la certification des compétences. 
 
 Les listes de contrôle de qualité du livre numérique ont pour objectif de&#8239;:
 
