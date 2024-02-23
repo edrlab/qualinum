@@ -5,9 +5,9 @@
         <article class="lg:col-10">
           {{ $image:= .Params.image }}
           {{ if $image }}
-            <div class="mb-10">
+            <figure class="mb-10">
               {{ partial "image" (dict "Src" $image "Alt" .Title "Class" "w-full rounded") }}
-            </div>
+            </figure>
           {{ end }}
           <h1 class="h2 mb-4">
             {{ .Title }}
@@ -58,6 +58,17 @@
                 </li>
               {{ end }}
             </ul>
+            <h3>Controle</h3>
+            <ul>
+              {{ $controle:= .Params.controle }}
+              {{ range $i,$p:= $controle }}
+                <li class="inline-block">
+
+                    {{ . | safeHTML }}
+
+                </li>
+              {{ end }}
+            </ul>
 
             {{/*  <li class="inline-block">{{ .Params.Meo }}</li>
             <h3>Contrôle </h3>
@@ -96,21 +107,21 @@
                 {{ end }}
               </ul>
               </div>
+
               <p class="mr-4 inline-block">
                 <i class="fa-regular fa-clock mr-2"></i>
                 {{ time.Format ":date_long" .PublishDate }}
-              </p>
-              <p>Auteurs : 
+                | Origine : 
                   {{/*  <i class="fa-regular fa-circle-user mr-2"></i>  */}}
-                                  {{ $author:= .Params.author }} 
-                                  {{ range $i,$p:= $author }}
+                                  {{ $source:= .Params.source }} 
+                                  {{ range $i,$p:= $source }}
                                       <a
                                       class="bg-theme-light hover:bg-primary dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark m-1 rounded px-3 py-1 hover:text-white"
                                       href="{{ `authors/` | relLangURL }}{{ . | urlize | lower }}/"> 
                                         {{ . | humanize }}</a>
                                   {{ end }}
-              </p>
-              <p>Reference Opquast {{ .Params.opquast }}</p>
+              | Reference Opquast {{ .Params.opquast }}</p>
+              <p><a class="normal" href="../{{ .Params.before }}">Régle précédente</a> | <a class="normal" href="../{{ .Params.after }}">Régle suivante</a></p>
 
             {{/*  <div class="lg:col-4 flex items-center">
               {{ partial "social-share" (dict "Context" . "Class" "share-icons" "Title" (i18n "share") "Whatsapp" false "Telegram" false) }}
