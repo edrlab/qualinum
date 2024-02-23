@@ -5,9 +5,9 @@
         <article class="lg:col-10">
           {{ $image:= .Params.image }}
           {{ if $image }}
-            <div class="mb-10">
+            <figure class="mb-10">
               {{ partial "image" (dict "Src" $image "Alt" .Title "Class" "w-full rounded") }}
-            </div>
+            </figure>
           {{ end }}
           <h1 class="h2 mb-4">
             {{ .Title }}
@@ -16,13 +16,7 @@
             <li class="mr-4 inline-block">
             {{ .Params.description }}
           </li>
-            <li class="mr-4 inline-block">
-              <a
-                href="{{ `authors/` | relLangURL }}{{ .Params.Author | urlize }}/">
-                <i class="fa-regular fa-circle-user mr-2"></i
-                >{{ .Params.author }} {{ .Params.opquast }}
-              </a>
-            </li>
+
             <li class="mr-4 inline-block">
               <i class="fa-regular fa-folder mr-2"></i>
               {{ $categories:= .Params.categories }}
@@ -36,10 +30,7 @@
                 </a>
               {{ end }}
             </li>
-            <li class="mr-4 inline-block">
-              <i class="fa-regular fa-clock mr-2"></i>
-              {{ time.Format ":date_long" .PublishDate }}
-            </li>
+
           </ul>
           <div class="content mb-10">
             {{ .Content }}
@@ -51,7 +42,7 @@
               {{ range $i,$p:= $objectif }}
                 <li class="inline-block">
 
-                    {{ . | humanize }}
+                    {{ . | safeHTML  }}
 
                 </li>
               {{ end }}
@@ -62,7 +53,18 @@
               {{ range $i,$p:= $meo }}
                 <li class="inline-block">
 
-                    {{ . |safeHTML }}
+                    {{ . | safeHTML }}
+
+                </li>
+              {{ end }}
+            </ul>
+            <h3>Controle</h3>
+            <ul>
+              {{ $controle:= .Params.controle }}
+              {{ range $i,$p:= $controle }}
+                <li class="inline-block">
+
+                    {{ . | safeHTML }}
 
                 </li>
               {{ end }}
@@ -104,9 +106,22 @@
                   </li>
                 {{ end }}
               </ul>
-              </ul>
-              
-            </div>
+              </div>
+
+              <p class="mr-4 inline-block">
+                <i class="fa-regular fa-clock mr-2"></i>
+                {{ time.Format ":date_long" .PublishDate }}
+                | Origine : 
+                  {{/*  <i class="fa-regular fa-circle-user mr-2"></i>  */}}
+                                  {{ $source:= .Params.source }} 
+                                  {{ range $i,$p:= $source }}
+                                      <a
+                                      class="bg-theme-light hover:bg-primary dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark m-1 rounded px-3 py-1 hover:text-white"
+                                      href="{{ `authors/` | relLangURL }}{{ . | urlize | lower }}/"> 
+                                        {{ . | humanize }}</a>
+                                  {{ end }}
+              | Reference Opquast {{ .Params.opquast }}</p>
+              <p><a class="normal" href="../{{ .Params.before }}">Régle précédente</a> | <a class="normal" href="../{{ .Params.after }}">Régle suivante</a></p>
 
             {{/*  <div class="lg:col-4 flex items-center">
               {{ partial "social-share" (dict "Context" . "Class" "share-icons" "Title" (i18n "share") "Whatsapp" false "Telegram" false) }}
