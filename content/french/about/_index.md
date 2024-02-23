@@ -8,13 +8,13 @@ layout: about
 
 *Travail en cours.*
 
-Entrée dans l’age de la maturité, l’édition numérique a développé des processus d’industrialisation et de standardisation adaptés, comme le format EPUB. 
+L’édition numérique a développé des processus d’industrialisation et de standardisation adaptés, comme le format EPUB mais n’échappe pas aujourd’hui aux injonctions extérieures liées à des dispositions légales et des enjeux sociétaux. 
 
-La numérisation de l'édition n”échappe pas aujourd’hui aux injonctions extérieures liées à des dispositions légales et des enjeux sociétaux. Pour demeurer rentables tout en répondant aux attentes des publics et des financeurs, les maisons d'édition doivent acquérir des compétences variées, les équipes de production numérique ne peuvent se limiter à la typographie, la performance, l’interopérabilité, l'accessibilité, l'éco-conception, la sécurité ou la gestion des données personnelles. Il est impératif de coordonner ces diverses expertises.
+Pour demeurer rentables tout en répondant aux attentes des publics et des financeurs, les maisons d'édition doivent acquérir des compétences variées, les équipes de production numérique ne peuvent se limiter à la typographie, la performance, l’interopérabilité, l'accessibilité, l'éco-conception, la sécurité ou la gestion des données personnelles. Il est impératif de coordonner ces diverses expertises.
 
 Tous les métiers de l'édition numérique sont concernés et les enjeux se posent en termes de prise de décision, maîtrise des risques, formation, méthodes, moyens et gouvernance.  Pour intégrer et assimiler diverses expertises extérieures, l’édition numérique doit s’équiper d’outils d'assurance, de management et de contrôle qualité tant pour la conception la production et la distribution que pour la formation et la certification des compétences. 
 
-Les listes de contrôle de qualité du livre numérique ont pour objectif de&#8239;:
+Les listes de contrôle de qualité du livre numérique ont pour objectifs de&#8239;:
 
 * assurer l'accès aux livres numérique pour le plus grand nombre de lecteurs, sans discrimination d'age, de compétence, d'aptitudes physiques ou mentales, de culture, de matériel et modalités d'accès ;
 * bâtir un référentiel commun de qualité du livre numérique
