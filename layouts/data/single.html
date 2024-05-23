@@ -42,11 +42,11 @@
            
             {{ .Content }}
             <h3>Objectif</h3>
-            {{ .Objectif }}
+            {{ .Objectif | safeHTML }}
             <h3>Mise en œuvre</h3>
-            {{ .Meo }}
+            {{ .Meo | safeHTML }}
             <h3>Contrôle </h3>
-            {{ .Controle }}
+            {{ Params.controle | safeHTML }}
           </div>
           <div class="row items-start justify-between">
             <div class="lg:col-5 mb-10 flex items-center lg:mb-0">
