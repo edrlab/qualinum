@@ -29,3 +29,8 @@
 
 - id: empty_search_results_placeholder
   translation: Écrire pour rechercher.
+
+- id: Referentiel
+  translation: Référentiels
+
+  

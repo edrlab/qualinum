@@ -40,7 +40,7 @@
             <ul>
               {{ $objectif:= .Params.objectif }}
               {{ range $i,$p:= $objectif }}
-                <li class="inline-block">
+                <li class="">
 
                     {{ . | safeHTML  }}
 
@@ -51,7 +51,7 @@
             <ul>
               {{ $meo:= .Params.meo }}
               {{ range $i,$p:= $meo }}
-                <li class="inline-block">
+                <li class="">
 
                     {{ . | safeHTML }}
 
@@ -74,9 +74,24 @@
             <h3>Contrôle </h3>
             <li class="inline-block">{{ .Params.Controle }}</li>  */}}
           </div>
+          <div class="lg:col-5 mb-10 flex items-center lg:mb-0">
+            <h5>Étapes concernées&nbsp;: </h5>
+            <ul>
+              {{ $steps:= .Params.steps }}
+              {{ range $i,$p:= $steps }}
+                <li class="inline-block">
+                  <a
+                  class="bg-theme-light hover:bg-primary dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark m-1 block rounded px-3 py-1 hover:text-white"
+                  href="{{ `etapes/` | relLangURL }}{{ . | urlize | lower }}/"> 
+                    {{ . | humanize }}</a>
+
+                </li>
+              {{ end }}
+            </ul>
+            </div>
           <div class="row items-start justify-between">
             <div class="lg:col-5 mb-10 flex items-center lg:mb-0">
-              <h5 class="mr-3">{{ i18n "tags" }} :</h5>
+              <h5 class="mr-3">{{ i18n "tags" }}&nbsp;:</h5>
               <ul>
                 {{ $tags:= .Params.tags }}
                 {{ range $i,$p:= $tags }}
@@ -91,27 +106,30 @@
               </ul>
               
             </div>
-            </div>
-            <div class="lg:col-5 mb-10 flex items-center lg:mb-0">
-              <h5>Étapes concernées : </h5>
+          </div>
+            <div class="row items-start justify-between">
+
+            <div class="">
+              <h5 class="mr-3">{{ i18n "Referentiel" }}&nbsp;:</h5>
               <ul>
-                {{ $steps:= .Params.steps }}
-                {{ range $i,$p:= $steps }}
-                  <li class="inline-block">
+                {{ $Referentiel:= .Params.Referentiel }}
+                {{ range $i,$p:= $Referentiel }}
+                <li class="inline-block">
                     <a
-                    class="bg-theme-light hover:bg-primary dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark m-1 block rounded px-3 py-1 hover:text-white"
-                    href="{{ `etapes/` | relLangURL }}{{ . | urlize | lower }}/"> 
-                      {{ . | humanize }}</a>
-  
+                      class="bg-theme-light hover:bg-primary dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark m-1 block rounded px-3 py-1 hover:text-white"
+                      href="{{ `Referentiel/` | relLangURL }}{{ . | urlize | lower }}/">
+                      {{ . | humanize }}
+                    </a>
                   </li>
                 {{ end }}
               </ul>
-              </div>
-
+              
+            </div>
+            </div>
+            
+            <h5 class="mr-3">À propos de cette règle</h5>
               <p class="mr-4 inline-block">
-                <i class="fa-regular fa-clock mr-2"></i>
-                {{ time.Format ":date_long" .PublishDate }}
-                | Origine : 
+Origine : 
                   {{/*  <i class="fa-regular fa-circle-user mr-2"></i>  */}}
                                   {{ $source:= .Params.source }} 
                                   {{ range $i,$p:= $source }}
@@ -120,7 +138,9 @@
                                       href="{{ `authors/` | relLangURL }}{{ . | urlize | lower }}/"> 
                                         {{ . | humanize }}</a>
                                   {{ end }}
-              | Reference Opquast {{ .Params.opquast }}</p>
+              | Reference Opquast {{ .Params.opquast }} 
+            |                <i class="fa-regular fa-clock mr-2"></i>
+            Mise à jour le {{ time.Format ":date_long" .PublishDate }}</p>
               <p><a class="normal" href="../{{ .Params.before }}">Régle précédente</a> | <a class="normal" href="../{{ .Params.after }}">Régle suivante</a></p>
 
             {{/*  <div class="lg:col-4 flex items-center">
