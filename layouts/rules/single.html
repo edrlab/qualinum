@@ -40,7 +40,7 @@
             <ul>
               {{ $objectif:= .Params.objectif }}
               {{ range $i,$p:= $objectif }}
-                <li class="inline-block">
+                <li class="">
 
                     {{ . | safeHTML  }}
 
@@ -51,7 +51,7 @@
             <ul>
               {{ $meo:= .Params.meo }}
               {{ range $i,$p:= $meo }}
-                <li class="inline-block">
+                <li class="">
 
                     {{ . | safeHTML }}
 
