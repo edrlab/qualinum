@@ -1,4 +1,4 @@
-ACcès aux régles comme .json : https://edrlab.github.io/qualinum/fr/rules/index.json
+Accès aux régles comme .json : https://edrlab.github.io/qualinum/fr/rules/index.json
 
 # Liste de contrôle de qualité pour le livre numérique
 
