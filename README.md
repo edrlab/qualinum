@@ -1,3 +1,5 @@
+ACcès aux régles comme .json : https://edrlab.github.io/qualinum/fr/rules/index.json
+
 # Liste de contrôle de qualité pour le livre numérique
 
 Dépot de travail collectif du Groupe de travail Normes & standards de la commission numérique du SNE.
@@ -18,6 +20,8 @@ Les règles sont publiées sous licence Creative Commons BY-SA. Vous pouvez les 
 * https://github.com/edrlab/qualinum
 
 https://creativecommons.org/licenses/by-sa/4.0/
+
+
 # Construit avec Hugoplate
 
 <p align="center">Hugoplate is a free starter template built with Hugo, and TailwindCSS, providing everything you need to jumpstart your Hugo project and save valuable time.</p>
